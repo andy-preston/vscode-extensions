@@ -1,0 +1,38 @@
+{
+    "name": "gavrasm",
+    "displayName": "GAVRASM Syntax",
+    "description": "GAVRASM Assembly Language Syntax",
+    "repository": "https://github.com/andy-preston/GAVRASM_syntax_VSCode",
+    "version": "0.0.1",
+    "publisher": "andy-preston",
+    "icon": "icon.png",
+    "engines": {
+        "vscode": "^1.32.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [
+            {
+                "id": "gavrasm",
+                "aliases": [
+                    "GAVRASM"
+                ],
+                "extensions": [
+                    ".asm",
+                    ".inc",
+                    ".avr"
+                ],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "gavrasm",
+                "scopeName": "source.gavrasm",
+                "path": "./gavrasm.tmLanguage.json"
+            }
+        ]
+    }
+}

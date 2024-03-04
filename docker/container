@@ -1,0 +1,21 @@
+#!/bin/bash
+
+case $1 in
+'vsix')
+    COMMAND="docker/vsix"
+    ;;
+'install')
+    COMMAND="npm ${@}"
+    ;;
+*)
+    COMMAND='sh'
+    ;;
+esac
+
+docker run \
+    --rm --interactive --tty \
+    --volume="$(pwd):/vscode" \
+    --workdir="/vscode" \
+    --user="$(id -u):$(id -g)" \
+    'node:21.6.2-alpine3.18' \
+    $COMMAND

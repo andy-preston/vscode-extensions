@@ -1,0 +1,38 @@
+{
+	"name": "edge-effect-dark",
+	"displayName": "Edge Effect Dark",
+	"publisher": "andy-preston",
+	"description": "Dark theme for VS Code",
+	"version": "0.0.1",
+	"icon": "icon.png",
+	"keywords": [
+		"vscode theme",
+		"dark theme",
+		"dark",
+		"theme",
+		"theme dark"
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/andy-preston/vscode-dark.git"
+	},
+	"engines": {
+		"vscode": "^1.38.0"
+	},
+	"categories": [
+		"Themes"
+	],
+	"contributes": {
+		"themes": [
+			{
+				"label": "Edge Effect Dark",
+				"uiTheme": "vs-dark",
+				"path": "dark.json"
+			}
+		]
+	},
+	"devDependencies": {
+		"color": "^4.0.0",
+		"nodemon": "^2.0.6"
+	}
+}
