@@ -2,7 +2,7 @@
     "name": "gavrasm",
     "displayName": "GAVRASM Syntax",
     "description": "GAVRASM Assembly Language Syntax",
-    "repository": "https://github.com/andy-preston/GAVRASM_syntax_VSCode",
+    "repository": "https://github.com/andy-preston/vscode-extensions",
     "version": "0.0.1",
     "publisher": "andy-preston",
     "icon": "icon.png",

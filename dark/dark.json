@@ -1,8 +1,8 @@
 {
-    "name": "Simple Dark",
+    "name": "Edge Effect Dark",
     "type": "dark",
-    "author": "Hondry Travis",
-    "maintainers": "travis<Hondry.Travis@outlook.com>",
+    "author": "Andy Preston",
+    "maintainers": "https://github.com/andy-preston",
     "semanticHighlighting": true,
     "colors": {
         "focusBorder": "#00A1F1",
