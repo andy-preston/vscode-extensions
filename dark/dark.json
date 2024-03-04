@@ -4,6 +4,7 @@
     "author": "Andy Preston",
     "maintainers": "https://github.com/andy-preston",
     "semanticHighlighting": true,
+    "$schema": "vscode://schemas/color-theme",
     "colors": {
         "focusBorder": "#00A1F1",
         "activityBar.background": "#2c2f32",
