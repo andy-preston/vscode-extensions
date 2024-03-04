@@ -11,7 +11,7 @@
         "activityBar.foreground": "#f0f0f0",
         "activityBarBadge.background": "#00bfff",
         "editor.background": "#000",
-        "editor.foreground": "#dddddd",
+        "editor.foreground": "#ddd",
         "editor.findMatchHighlightBackground": "#444444",
         "editor.hoverHighlightBackground": "#444444",
         "editor.selectionBackground": "#444444",
@@ -50,9 +50,67 @@
     },
     "tokenColors": [
         {
-            "name": "Variables",
-            "scope": ["variable"],
-            "settings": { "foreground": "#dddddd" }
+            "scope": [
+                "string.quoted.single",
+                "string.quoted.double",
+                "string.quoted.triple",
+                "string.quoted.other",
+                "string.template"
+            ],
+            "settings": { "foreground": "#ffb" }
+        },
+        {
+            "scope": [
+                "comment",
+                "punctuation.definition.comment"
+            ],
+            "settings": { "foreground": "#777" }
+        },
+        {
+            "scope": [
+                "variable",
+                "variable.other.constant",
+                "support.type.property-name.json",
+                "meta.object-literal.key.ts",
+                "entity.other.attribute-name.html"
+            ],
+            "settings": { "foreground": "#5fd" }
+        },
+        {
+            "scope": [
+                "variable.parameter"
+            ],
+            "settings": { "foreground": "#Fc7" }
+        },
+        {
+            "scope": [
+                "support.type.primitive",
+                "support.class.kotlin"
+            ],
+            "settings": { "foreground": "#68f" }
+        },
+        {
+            "scope": [
+                "keyword",
+                "keyword.operator",
+                "punctuation.separator",
+                "punctuation.terminator",
+                "punctuation.separator.continuation",
+                "punctuation.accessor",
+                "storage",
+                "constant",
+                "constant.numeric",
+                "entity.name.tag",
+            ],
+            "settings": { "foreground": "#F4A" }
+        },
+        {
+            "scope": [
+                "meta.function.parameters",
+                "entity.name.function",
+                "support.function"
+            ],
+            "settings": { "foreground": "#0f7" }
         },
         {
             "name": "Variables this ...",
@@ -60,69 +118,9 @@
             "settings": { "foreground": "#BD93F9" }
         },
         {
-            "name": "Variables parameter ...",
-            "scope": ["variable.parameter"],
-            "settings": { "foreground": "#FFB86C" }
-        },
-        {
-            "name": "Variables constant ...",
-            "scope": ["variable.other.constant"],
-            "settings": { "foreground": "#E1FFFF" }
-        },
-        {
             "name": "Variables Less Sass ...",
             "scope": ["variable.scss", "variable.other.interpolation.less"],
             "settings": { "foreground": "#E1FFFF" }
-        },
-        {
-            "name": "Variables parameter for C#",
-            "scope": ["entity.name.variable.parameter.cs"],
-            "settings": { "foreground": "#FFB86C" }
-        },
-        {
-            "name": "Comment",
-            "scope": ["comment", "punctuation.definition.comment"],
-            "settings": { "foreground": "#737373" }
-        },
-        {
-            "name": "Invalid",
-            "scope": ["invalid", "invalid.illegal"],
-            "settings": { "foreground": "#f4433c" }
-        },
-        {
-            "name": "Invalid: HTML[attribute-name]",
-            "scope": ["invalid.deprecated.entity.other.attribute-name"],
-            "settings": { "foreground": "#00bfff" }
-        },
-        {
-            "name": "Invalid: Style[attribute-name]",
-            "scope": ["invalid.deprecated.media"],
-            "settings": { "foreground": "#00E673" }
-        },
-        {
-            "name": "Keyword",
-            "scope": ["keyword"],
-            "settings": { "foreground": "#FF69B4" }
-        },
-        {
-            "name": "Keyword: new",
-            "scope": ["keyword.operator.new"],
-            "settings": { "fontStyle": "bold" }
-        },
-        {
-            "name": "Keyword: use for [C#/.Net] type",
-            "scope": ["keyword.type.cs"],
-            "settings": { "foreground": "#8BE9FD" }
-        },
-        {
-            "name": "Storage",
-            "scope": ["storage"],
-            "settings": { "foreground": "#FF69B4" }
-        },
-        {
-            "name": "Storage: Type for c#",
-            "scope": ["storage.type.cs"],
-            "settings": { "foreground": "#00bfff" }
         },
         {
             "name": "MarkDown - paragraph",
@@ -197,11 +195,6 @@
             "settings": { "foreground": "#eefa7a" }
         },
         {
-            "name": "Constant",
-            "scope": ["constant", "constant.numeric"],
-            "settings": { "foreground": "#BD93F9" }
-        },
-        {
             "name": "Entity: Attribute Name",
             "scope": [
                 "entity.name.type",
@@ -216,11 +209,6 @@
             "settings": { "foreground": "#FF69B4" }
         },
         {
-            "name": "Entity: TagName",
-            "scope": ["entity.name.tag"],
-            "settings": { "foreground": "#FF69B4" }
-        },
-        {
             "name": "Entity: Native-Object[Array,Object]",
             "scope": ["entity.name.type.class"],
             "settings": { "foreground": "#00bfff" }
@@ -229,11 +217,6 @@
             "name": "Entity: use for C++/C",
             "scope": ["entity.name.namespace.cpp", "entity.name.namespace.c"],
             "settings": { "foreground": "#8BE9FD" }
-        },
-        {
-            "name": "Meta: Color of Function name",
-            "scope": ["meta.function.parameters", "entity.name.function"],
-            "settings": { "foreground": "#00E673" }
         },
         {
             "name": "Meta: Use for in HTML attr id",
@@ -251,17 +234,6 @@
             "settings": { "foreground": "#FF69B4" }
         },
         {
-            "name": "String: Quoted | Template",
-            "scope": [
-                "string.quoted.single",
-                "string.quoted.double",
-                "string.quoted.triple",
-                "string.quoted.other",
-                "string.template"
-            ],
-            "settings": { "foreground": "#C3E88D" }
-        },
-        {
             "name": "String: Regexp",
             "scope": ["string.regexp"],
             "settings": { "foreground": "#00E673" }
@@ -270,17 +242,6 @@
             "name": "String-Attribute: CSS",
             "scope": ["string.unquoted.attribute-value.css"],
             "settings": { "foreground": "#BD93F9" }
-        },
-        {
-            "name": "Punctuation",
-            "scope": [
-                "punctuation",
-                "punctuation.separator",
-                "punctuation.terminator",
-                "punctuation.separator.continuation",
-                "punctuation.accessor"
-            ],
-            "settings": { "foreground": "#dddddd" }
         },
         {
             "name": "Punctuation: color at the start and end of string",
@@ -365,7 +326,6 @@
             "scope": [
                 "support.class",
                 "support.variable",
-                "support.function",
                 "support.type",
                 "support.constant"
             ],
