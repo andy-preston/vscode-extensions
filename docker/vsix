@@ -1,4 +1,8 @@
 #!/bin/sh
 
-cd extension
+cd dark
 ../node_modules/.bin/vsce package
+cd ../gavrasm
+../node_modules/.bin/vsce package
+cd ..
+
