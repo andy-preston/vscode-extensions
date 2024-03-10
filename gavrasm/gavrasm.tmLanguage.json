@@ -2,8 +2,40 @@
     "scopeName": "source.gavrasm",
     "patterns": [
         {
-            "match": "(?i)\\b(add|adc|adiw|sub|subi|sbc|sbci|sbiw|and|andi|or|ori|eor|com|neg|sbr|cbr|inc|dec|tst|clr|ser|mul|muls|mulsu|fmul|fmuls|fmulsu|des|rjmp|ijmp|eijmp|jmp|rcall|icall|eicall|call|ret|reti|cpse|cp|cpc|cpi|sbrc|sbrs|sbic|sbis|brbs|brbc|breq|brne|brcs|brcc|brsh|brlo|brmi|brpl|brge|brlt|brhs|brhc|brts|brtc|brvs|brvc|brie|brid|mov|movw|ldi|lds|ld|ldd|ld|ldd|sts|st|std|st|std|lpm|elpm|spm|in|out|push|pop|xch|las|lac|lat|lsl|lsr|rol|ror|asr|swap|bset|bclr|sbi|cbi|bst|bld|sec|clc|sen|cln|sez|clz|sei|cli|ses|cls|sev|clv|set|clt|seh|clh|break|nop|sleep|wdr)\\b(?i)",
-            "name": "keyword.instruction.gavrasm"
+            "match": "(?i)\\b(add|adc|adiw|sub|subi|sbc|sbci|sbiw|com|neg|inc|dec|mul|muls|mulsu|fmul|fmuls|fmulsu|sec|clc|sen|cln|sez|clz|ses|cls|sev|clv|seh|clh)\\b(?i)",
+            "name": "keyword.instruction.arithmetic.gavrasm"
+        },
+        {
+            "match": "(?i)\\b(cp|cpc|cpi|tst)\\b(?i)",
+            "name": "keyword.instruction.compare.gavrasm"
+        },
+        {
+            "match": "(?i)\\b(and|andi|or|ori|eor|rol|ror|sbr|cbr|clr|ser|asr|swap|bset|bclr)\\b(?i)",
+            "name": "keyword.instruction.logical.gavrasm"
+        },
+        {
+            "match": "(?i)\\b(rjmp|ijmp|eijmp|jmp|rcall|icall|eicall|call|ret|reti)\\b(?i)",
+            "name": "keyword.instruction.jump.gavrasm"
+        },
+        {
+            "match": "(?i)\\b(cpse|sbrc|sbrs|sbic|sbis)\\b(?i)",
+            "name": "keyword.instruction.skip.gavrasm"
+        },
+        {
+            "match": "(?i)\\b(brbs|brbc|breq|brne|brcs|brcc|brsh|brlo|brmi|brpl|brge|brlt|brhs|brhc|brts|brtc|brvs|brvc|brie|brid)\\b(?i)",
+            "name": "keyword.instruction.conditional.gavrasm"
+        },
+        {
+            "match": "(?i)\\b(mov|movw|ldi|lds|ld|ldd|ld|ldd|las|lac|lat|lsl|lsr|sts|st|std|st|std|lpm|elpm|spm|push|pop|xch|bst|bld|set|clt)\\b(?i)",
+            "name": "keyword.instruction.register.gavrasm"
+        },
+        {
+            "match": "(?i)\\b(in|out|sbi|cbi|sei|cli|wdr)\\b(?i)",
+            "name": "keyword.instruction.io.gavrasm"
+        },
+        {
+            "match": "(?i)\\b(break|nop|sleep|des)\\b(?i)",
+            "name": "keyword.instruction.special.gavrasm"
         },
         {
             "match": "(?i)\\.\\b(byte|cseg|db|def|device|dseg|dw|elif|else|endif|endm|endmacro|equ|error|eseg|exit|if|ifdef|ifdevice|ifndef|include|list|listmac|macro|message|nolist|org|set|setglobal)\\b(?i)",
