@@ -66,11 +66,11 @@
             "name": "constant.language.timers.registers.gavrasm"
         },
         {
-            "match": "(?i)\\b(ocr1ah|ocr1al|tccr1a|tccr1b|tcnt1h|tcnt1l)\\b(?i)",
+            "match": "(?i)\\b(ocr1ah|ocr1al|ocr1bh|ocr1bl|tccr1a|tccr1b|tcnt1h|tcnt1l)\\b(?i)",
             "name": "constant.language.timer1.registers.gavrasm"
         },
         {
-            "match": "(?i)\\b(ocf1a)\\b(?i)",
+            "match": "(?i)\\b(ocf1a)\\b(ocf1b)\\b(?i)",
             "name": "constant.language.timer1.operands.gavrasm"
         },
         {
